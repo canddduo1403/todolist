@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/todoItemText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/todoItemText"
+        android:layout_width="209dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dateText"
+        app:layout_constraintEnd_toStartOf="@+id/finished_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="50dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox" />
+
+    <ImageView
+        android:id="@+id/finished_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/checkdone" />
+
+    <ImageView
+        android:id="@+id/delete_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/finished_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/delete" />
+
+
+</android.support.constraint.ConstraintLayout>
